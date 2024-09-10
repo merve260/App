@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <title>Bücher Suche</title>
+</head>
+
+<body>
+    <div id="eingabe">
+        <p><strong>Bitte geben Sie den Titel des Buches ein:</strong></p>
+        <input type="text" id="buchTitel" name="name"> <br>
+    </div>
+
+    <!-- Bereich für die Tabelle -->
+    <table id="ergebnisTabelle" border="1" style="width:100%; display:none;">
+        <thead>
+            <tr>
+                <th>Autor</th>
+                <th>Verlag</th>
+                <th>Thumbnail</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamisch eingefügte Zeilen -->
+        </tbody>
+    </table>
+
+    <!-- Bereich für die Details -->
+    <div id="buchDetails" style="margin-top:20px;  display:none;">
+        <h3>Details</h3>
+        <div id="detailsInhalt">
+            <!-- Details werden hier per AJAX geladen -->
+        </div>
+    </div>
+
+    <!-- JavaScript-Dateien -->
+    <script src="js/script.js"></script> <!-- Suche und Liste -->
+    <script src="js/buchDetails.js"></script> <!-- Details -->
+
+</body>
+
+</html>
